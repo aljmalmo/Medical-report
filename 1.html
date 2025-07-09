@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تقرير طبي PDF شامل | متلازمة كلوية وفشل كلوي نهائي</title>
+    <meta name="description" content="اكتشف نموذج تقرير طبي PDF احترافي وشامل لحالات المتلازمة الكلوية المزمنة والفشل الكلوي النهائي. تعلم كيفية صياغة التقارير الطبية، شروطها، وأهميتها القانونية والأخلاقية.">
+    <meta name="keywords" content="تقرير طبي pdf, نموذج تقرير طبي, تقارير طبية شاملة, متلازمة كلوية, فشل كلوي نهائي, كتابة تقرير طبي, شروط التقرير الطبي, التاريخ المرضي, الفحوصات الطبية">
+    <meta name="author" content="Doctor Hypo">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700&family=El+Messiri:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-dark-blue: #2C3E50; /* أزرق داكن (مستشفى) */
+            --primary-light-blue: #3498DB; /* أزرق فاتح حيوي */
+            --secondary-green: #27AE60; /* أخضر طبيعي */
+            --accent-purple: #9B59B6; /* بنفسجي هادئ */
+            --accent-orange: #FF8C00; /* برتقالي حيوي */ /* تم التأكيد على وجوده */
+            --text-dark: #3a3a3a;
+            --text-light: #7f8c8d;
+            --bg-light: #ECF0F1; /* خلفية رمادية فاتحة */
+            --card-bg: #FFFFFF;
+            --shadow-subtle: rgba(0, 0, 0, 0.08);
+            --shadow-strong: rgba(0, 0, 0, 0.15);
+            --border-soft: #BDC3C7;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, var(--bg-light) 0%, #D8EBF9 100%); /* تدرج لون هادئ للخلفية */
+            color: var(--text-dark);
+            line-height: 1.8;
+            direction: rtl;
+            text-align: right;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* خلفية تفاعلية بصرية (لوحة متحركة) */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 20% 80%, rgba(52,152,219,0.15) 0%, transparent 60%),
+                        radial-gradient(circle at 80% 20%, rgba(39,174,96,0.15) 0%, transparent 60%);
+            z-index: -1;
+            animation: moveGradient 45s infinite alternate ease-in-out; /* حركة أطول وأكثر سلاسة */
+            opacity: 0.9;
+        }
+
+        @keyframes moveGradient {
+            0% { background-position: 0% 0%; }
+            100% { background-position: 100% 100%; }
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 50px auto;
+            padding: 40px; /* زيادة البادينج */
+            background-color: var(--card-bg);
+            border-radius: 20px;
+            box-shadow: 0 15px 40px var(--shadow-strong);
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            animation: fadeInScale 1s ease-out;
+        }
+
+        @keyframes fadeInScale {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 45px;
+            padding-bottom: 30px;
+            border-bottom: 5px solid var(--primary-light-blue); /* خط أزرق فاتح */
+            position: relative;
+        }
+
+        header h1 {
+            font-family: 'El Messiri', serif;
+            color: var(--primary-dark-blue);
+            font-size: 3.2em;
+            margin-bottom: 15px;
+            line-height: 1.2;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+            animation: slideInFromTop 0.8s ease-out;
+        }
+
+        @keyframes slideInFromTop {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 15px auto 0;
+            font-weight: 400;
+            animation: fadeIn 1.2s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .content-section {
+            margin-bottom: 35px;
+            padding: 30px; /* زيادة البادينج */
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 5px 15px var(--shadow-subtle);
+            transition: all 0.3s ease;
+        }
+
+        .content-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px var(--shadow-strong);
+        }
+
+        .content-section h2 {
+            font-family: 'El Messiri', serif;
+            color: var(--primary-dark-blue);
+            font-size: 2.6em; /* حجم أكبر */
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 12px; /* زيادة */
+            text-align: center;
+        }
+
+        .content-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(50%);
+            width: 90px; /* أوسع */
+            height: 5px; /* أسمك */
+            background-color: var(--secondary-green);
+            border-radius: 2px;
+        }
+
+        .content-section h3 {
+            font-family: 'El Messiri', serif;
+            color: var(--primary-dark-blue);
+            font-size: 2em; /* حجم أكبر */
+            margin-top: 35px; /* مسافة أكبر */
+            margin-bottom: 20px; /* مسافة أكبر */
+            padding-right: 20px; /* زيادة البادينج */
+            border-right: 6px solid var(--accent-purple); /* شريط بنفسجي مميز */
+            line-height: 1.4;
+        }
+
+        p {
+            margin-bottom: 18px; /* مسافة أكبر بين الفقرات */
+            font-size: 1.1em; /* حجم أكبر للنص */
+            color: var(--text-dark);
+        }
+
+        ol {
+            list-style-type: none;
+            padding: 0;
+            counter-reset: item-counter;
+        }
+
+        ol li {
+            background-color: var(--bg-light);
+            margin-bottom: 12px; /* مسافة أكبر */
+            padding: 18px 25px; /* بادينج أكبر */
+            border-radius: 12px; /* استدارة أكثر */
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+            border-right: 7px solid var(--secondary-green); /* شريط أخضر أكثر بروزًا */
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            font-size: 1.1em; /* حجم أكبر للنص */
+            display: flex;
+            align-items: flex-start;
+        }
+
+        ol li:hover {
+            transform: translateX(-10px); /* حركة أكبر */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+        }
+        
+        ol li::before {
+            content: counter(item-counter);
+            counter-increment: item-counter;
+            display: inline-block;
+            background-color: var(--accent-orange);
+            color: #fff;
+            border-radius: 50%;
+            width: 38px; /* حجم أكبر للرقم */
+            height: 38px;
+            line-height: 38px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1em; /* حجم الخط في الرقم */
+            margin-left: 20px; /* مسافة أكبر */
+            flex-shrink: 0;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+            transition: transform 0.2s ease; /* تأثير حركة للرقم */
+        }
+        ol li:hover::before {
+            transform: scale(1.1); /* تكبير الرقم عند التحويم */
+        }
+
+        a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease, text-decoration 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--secondary-green);
+            text-decoration: underline;
+        }
+
+        .download-section {
+            text-align: center;
+            margin-top: 50px; /* مسافة أكبر */
+            padding-top: 35px; /* بادينج أكبر */
+            border-top: 3px dashed var(--border-soft); /* خط أكثر سمكًا */
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            background: linear-gradient(45deg, var(--secondary-green), #4CAF50);
+            color: #fff;
+            padding: 20px 45px; /* زر أكبر وأبرز */
+            border-radius: 12px; /* استدارة أكثر */
+            font-size: 1.4em; /* حجم خط أكبر */
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25); /* ظل أقوى */
+            position: relative;
+            overflow: hidden;
+            min-width: 300px;
+            justify-content: center;
+        }
+
+        .download-btn::before {
+            content: '⬇️';
+            margin-left: 20px; /* مسافة أكبر */
+            font-size: 1.6em; /* أيقونة أكبر */
+            animation: bounceIn 1.2s ease-out; /* حركة أبطأ */
+        }
+
+        @keyframes bounceIn {
+            0%, 20%, 40%, 60%, 80%, 100% {
+                transform: translateY(0);
+            }
+            10% {
+                transform: translateY(-8px);
+            }
+            30% {
+                transform: translateY(-4px);
+            }
+        }
+
+        .download-btn:hover {
+            background: linear-gradient(45deg, #4CAF50, var(--secondary-green));
+            transform: translateY(-7px); /* رفع أكبر */
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4); /* ظل أقوى */
+            text-decoration: none;
+        }
+        .download-btn:active::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 5px;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.5);
+            opacity: 0;
+            border-radius: 50%;
+            transform: scale(1) translate(-50%, -50%);
+            animation: ripple 0.6s linear forwards;
+        }
+        @keyframes ripple {
+            from { transform: scale(0) translate(-50%, -50%); opacity: 1; }
+            to { transform: scale(15) translate(-50%, -50%); opacity: 0; }
+        }
+
+        .file-info-box {
+            background-color: var(--bg-light);
+            padding: 25px 30px; /* بادينج أكبر */
+            border-radius: 15px;
+            margin-top: 35px; /* مسافة أكبر */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            color: var(--text-dark);
+            border-left: 6px solid var(--primary-light-blue); /* شريط أزرق فاتح مميز */
+        }
+        .file-info-box p {
+            margin: 10px 0; /* مسافة أكبر بين فقرات المعلومات */
+            font-size: 1.05em;
+        }
+        .file-info-box strong {
+            color: var(--primary-dark-blue);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 80px; /* مسافة أكبر */
+            padding-top: 35px; /* بادينج أكبر */
+            border-top: 1px solid var(--border-soft);
+            color: var(--text-light);
+            font-size: 0.95em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                margin: 30px auto;
+                padding: 20px;
+            }
+            header h1 {
+                font-size: 2.8em;
+            }
+            header p {
+                font-size: 1em;
+            }
+            .content-section {
+                padding: 15px;
+            }
+            .content-section h2 {
+                font-size: 2.2em;
+            }
+            .content-section h3 {
+                font-size: 1.6em;
+            }
+            .download-btn {
+                font-size: 1.2em;
+                padding: 15px 25px;
+                min-width: unset;
+                width: 100%;
+            }
+            ol li {
+                padding: 12px 18px;
+            }
+            ol li::before {
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                font-size: 0.9em;
+                margin-left: 12px;
+            }
+            .file-info-box {
+                padding: 18px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>تقرير طبي PDF شامل</h1>
+            <p>نموذج احترافي ودليل متكامل لحالات متلازمة كلوية مزمنة وفشل كلوي نهائي.</p>
+        </header>
+
+        <section class="content-section">
+            <h2>مقدمة حول أهمية التقارير الطبية</h2>
+            <p>التعليم الطبي يتجاوز بكثير مجرد فهم الأمراض وعلاجها؛ فهو يشمل جوانب قانونية، أخلاقية، وإدارية لا غنى عنها في الممارسة الطبية الحديثة. ومن بين هذه الجوانب الحيوية تأتي **مهارة كتابة التقارير الطبية**، والتي تستلزم من الطبيب إتقانًا تامًا لضمان الدقة والوضوح وتجنب أي تعقيدات محتملة.</p>
+            <p>التقرير الطبي هو وثيقة محورية يحررها الطبيب لتلخيص كافة المعلومات المتعلقة بالمريض. يمكن اعتباره بمثابة **تاريخ مرضي مفصل**، حيث يقدم نموذجًا لملف المريض يضم جميع البيانات الضرورية للحالة الصحية التي يشرف عليها الطبيب.</p>
+            <p>يتضمن التقرير الطبي عناصر أساسية مثل اسم المريض، سنه، مهنته، حالته الصحية الراهنة، بالإضافة إلى الشكوى الرئيسية والأمراض والأعراض المرتبطة بها. كما يورد التقرير تفاصيل عن الأمراض السابقة، الأدوية التي تعاطاها المريض سابقًا أو يتناولها حاليًا، والسجل الطبي لأجزاء الجسم المعنية بالشكوى، مع التركيز على جزء الاعتلالات وتاريخها.</p>
+            <p>ولا يكتمل التقرير بدون تفصيل **الفحوصات والأشعة** التي خضع لها المريض، ونتائج هذه الفحوصات، وتعليقات الطبيب على <a href="https://www.doctorhypo.me/2021/01/Diseases-and-their-treatment.html" target="_blank">الحالات المرضية</a>، سواء كانت مرتبطة بالشكوى الحالية أو غير مرتبطة بها. كما يضم التقرير السجل الطبي للمريض على مدار تواريخ مختلفة، وأي تقارير طبية سابقة صادرة بشأنه.</p>
+            <p>هذه التفاصيل وغيرها، التي تشكل جوهر **نموذج ملف المريض PDF**، ستكتشفونها بإذن الله تعالى في هذا الملف الشامل التابع لسلسلة <a href="https://www.doctorhypo.me/2021/04/Investigation-x-rays-in-emergency.html" target="_blank">التقارير الطبية PDF</a>. سيعلمكم هذا الدليل كيفية صياغة تقرير طبي متكامل، مع إبراز **الشروط الواجب توافرها في التقرير الطبي**، وكيفية تجنب أي ثغرة أو خطأ قد يؤدي إلى مشاكل غير مرغوبة.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>محتويات ملف نموذج تقرير طبي PDF</h2>
+            <p>على الرغم من أن الملف لا يحتوي على فهرس تقليدي، إلا أن مراجعتنا الشاملة لمحتوياته الرئيسية كشفت عن النقاط الهامة التالية:</p>
+            <ol>
+                <li>إرشادات هامة قبل كتابة التقرير الطبي.</li>
+                <li>تعلم طرق وشروط كتابة التقرير الطبي.</li>
+                <li>ماذا يجب أن يتضمن التقرير عن بيانات المريض؟</li>
+                <li>الأمراض السابقة والأدوية الحالية.</li>
+                <li>السجل الطبي لأجزاء الجسم المتأثرة.</li>
+                <li>تفاصيل الفحوصات والأشعة ونتائجها.</li>
+                <li>التعليقات والملاحظات الطبية.</li>
+                <li>سجل المريض الزمني والتقارير السابقة.</li>
+                <li>تجنب ثغرات التقرير الطبي الشائعة.</li>
+                <li>نموذج عملي لتقرير طبي شامل.</li>
+            </ol>
+        </section>
+
+        <section class="content-section">
+            <h2>معلومات عن ملف نموذج تقرير طبي PDF</h2>
+            <div class="file-info-box">
+                <p><strong>عدد صفحات الملف:</strong> 7 صفحات فقط.</p>
+                <p><strong>لغة الكتاب:</strong> اللغة العربية.</p>
+                <p><strong>حجم الكتاب:</strong> 5 ميجابايت.</p>
+                <p>الملف من إعداد الدكتورة أسماء عبد الجليل الثويني، جزاها الله خير الجزاء.</p>
+            </div>
+            
+            <div class="download-section">
+                <p><strong>لتحميل ملف نموذج تقرير طبي PDF، اضغط على الزر أدناه:</strong></p>
+                <a href="https://drive.google.com/file/d/1M65hw1Cft1yGOQxMrMFcJ109PLD_rOgh/view?usp=sharing" target="_blank" class="download-btn" rel="nofollow">تحميل نموذج تقرير طبي PDF</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Doctor Hypo. جميع الحقوق محفوظة.</p>
+            <p>نسعى لتقديم محتوى طبي موثوق ومفيد.</p>
+        </footer>
+    </div>
+</body>
+</html>
